@@ -1,0 +1,9 @@
+{
+	"name": "lkdecadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "05408606-d702-4bb5-9604-c9fcad556c97",
+		"tenantId": "5d8baf8c-b2b9-4565-9f80-c22d0cab3623"
+	}
+}
