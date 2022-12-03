@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "web_to_adls",
 	"properties": {
 		"activities": [
 			{
@@ -36,126 +36,8 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"name": "empno",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "empno",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "ename",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "ename",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "job",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "job",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "mgr",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "mgr",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "hiredate",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "hiredate",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "sal",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "sal",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "comm",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "comm",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "deptno",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "deptno",
-									"type": "String",
-									"physicalType": "String"
-								}
-							}
-						],
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "DelimitedText1",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "DelimitedText2",
-						"type": "DatasetReference"
-					}
-				]
+					"enableStaging": false
+				}
 			}
 		],
 		"annotations": []
