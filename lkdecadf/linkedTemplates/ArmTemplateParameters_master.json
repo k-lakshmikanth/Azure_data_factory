@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "lkdecadf"
 		},
+		"db1_connectionString": {
+			"value": ""
+		},
 		"lkdec1_accountKey": {
 			"value": ""
 		},

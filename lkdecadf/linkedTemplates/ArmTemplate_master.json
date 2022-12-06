@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "lkdecadf"
 		},
+		"db1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'db1'"
+		},
 		"lkdec1_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'lkdec1'"
@@ -45,6 +49,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"db1_connectionString": {
+						"value": "[parameters('db1_connectionString')]"
 					},
 					"lkdec1_accountKey": {
 						"value": "[parameters('lkdec1_accountKey')]"
