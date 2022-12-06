@@ -37,7 +37,19 @@
 						}
 					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "web",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "adls",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
